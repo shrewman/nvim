@@ -1,5 +1,6 @@
 return {
   { 'MunifTanjim/prettier.nvim' },
+  { "nvimtools/none-ls-extras.nvim" },
   {
     'nvimtools/none-ls.nvim',
     dependencies = {
@@ -31,14 +32,13 @@ return {
           end
         end,
         sources = {
-          null_ls.builtins.code_actions.eslint_d,
-          null_ls.builtins.diagnostics.eslint_d,
-
+          -- null_ls.builtins.code_actions.eslint_d,
+          -- null_ls.builtins.diagnostics.eslint_d,
+          -- require('none-ls.diagnostics.eslint_d'),
           null_ls.builtins.diagnostics.mypy.with {
             extra_args = { '--ignore-missing-imports' },
           },
-          null_ls.builtins.diagnostics.ruff,
-
+          -- null_ls.builtins.diagnostics.ruff,
           null_ls.builtins.formatting.prettierd,
           null_ls.builtins.formatting.black,
           null_ls.builtins.formatting.stylua,
