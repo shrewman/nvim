@@ -4,6 +4,7 @@ vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.breakindent = true
+vim.opt.smartindent = true
 
 vim.o.hlsearch = false
 vim.o.hlincsearch = true
@@ -30,3 +31,9 @@ vim.o.timeoutlen = 300
 vim.o.completeopt = 'menuone,noselect'
 
 vim.o.termguicolors = true
+
+vim.o.swapfile = false;
+
+vim.opt.undofile = true
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+
